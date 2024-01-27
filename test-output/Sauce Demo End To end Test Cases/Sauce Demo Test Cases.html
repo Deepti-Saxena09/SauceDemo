@@ -1,0 +1,210 @@
+<html>
+<head>
+<title>TestNG:  Sauce Demo Test Cases</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Sauce Demo Test Cases</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>26/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Jan 27 23:30:00 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>54 seconds (54539 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.saucedemo.qa.test.LoginPageTest.validLoginTestUsingTestData()'><b>validLoginTestUsingTestData</b><br>Test class: com.saucedemo.qa.test.LoginPageTest<br>Parameters: standard_user, secret_sauce</td>
+<td></td>
+<td>0</td>
+<td>com.saucedemo.qa.test.LoginPageTest@2a7f1f10</td></tr>
+<tr>
+<td title='com.saucedemo.qa.test.ProductsPageTest.checkItemDetail()'><b>checkItemDetail</b><br>Test class: com.saucedemo.qa.test.ProductsPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.saucedemo.qa.test.ProductsPageTest@350aac89</td></tr>
+<tr>
+<td title='com.saucedemo.qa.test.LoginPageTest.validLoginTestUsingTestData()'><b>validLoginTestUsingTestData</b><br>Test class: com.saucedemo.qa.test.LoginPageTest<br>Parameters: performance_glitch_user, secret_sauce</td>
+<td></td>
+<td>5</td>
+<td>com.saucedemo.qa.test.LoginPageTest@2a7f1f10</td></tr>
+<tr>
+<td title='com.saucedemo.qa.test.LoginPageTest.validLoginTestUsingTestData()'><b>validLoginTestUsingTestData</b><br>Test class: com.saucedemo.qa.test.LoginPageTest<br>Parameters: locked_out_user, secret_sauce</td>
+<td></td>
+<td>0</td>
+<td>com.saucedemo.qa.test.LoginPageTest@2a7f1f10</td></tr>
+<tr>
+<td title='com.saucedemo.qa.test.CheckoutInformationPageTest.checkPageTitle()'><b>checkPageTitle</b><br>Test class: com.saucedemo.qa.test.CheckoutInformationPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.saucedemo.qa.test.CheckoutInformationPageTest@79e4c792</td></tr>
+<tr>
+<td title='com.saucedemo.qa.test.LoginPageTest.emptyCredentialsLoginTest()'><b>emptyCredentialsLoginTest</b><br>Test class: com.saucedemo.qa.test.LoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.saucedemo.qa.test.LoginPageTest@2a7f1f10</td></tr>
+<tr>
+<td title='com.saucedemo.qa.test.LoginPageTest.validLoginTestUsingTestData()'><b>validLoginTestUsingTestData</b><br>Test class: com.saucedemo.qa.test.LoginPageTest<br>Parameters: visual_user, secret_sauce</td>
+<td></td>
+<td>0</td>
+<td>com.saucedemo.qa.test.LoginPageTest@2a7f1f10</td></tr>
+<tr>
+<td title='com.saucedemo.qa.test.LoginPageTest.validLoginTestUsingTestData()'><b>validLoginTestUsingTestData</b><br>Test class: com.saucedemo.qa.test.LoginPageTest<br>Parameters: error_user, secret_sauce</td>
+<td></td>
+<td>0</td>
+<td>com.saucedemo.qa.test.LoginPageTest@2a7f1f10</td></tr>
+<tr>
+<td title='com.saucedemo.qa.test.LoginPageTest.validLoginTestUsingTestData()'><b>validLoginTestUsingTestData</b><br>Test class: com.saucedemo.qa.test.LoginPageTest<br>Parameters: problem_user, secret_sauce</td>
+<td></td>
+<td>0</td>
+<td>com.saucedemo.qa.test.LoginPageTest@2a7f1f10</td></tr>
+<tr>
+<td title='com.saucedemo.qa.test.LoginPageTest.invalidCredentialsLoginTest()'><b>invalidCredentialsLoginTest</b><br>Test class: com.saucedemo.qa.test.LoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.saucedemo.qa.test.LoginPageTest@2a7f1f10</td></tr>
+<tr>
+<td title='com.saucedemo.qa.test.CheckoutCompletePageTest.checkPageTitle()'><b>checkPageTitle</b><br>Test class: com.saucedemo.qa.test.CheckoutCompletePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.saucedemo.qa.test.CheckoutCompletePageTest@196a42c3</td></tr>
+<tr>
+<td title='com.saucedemo.qa.test.CheckoutInformationPageTest.checkMandatoryFields()'><b>checkMandatoryFields</b><br>Test class: com.saucedemo.qa.test.CheckoutInformationPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.saucedemo.qa.test.CheckoutInformationPageTest@79e4c792</td></tr>
+<tr>
+<td title='com.saucedemo.qa.test.ProductsPageTest.checkCartFunctionality()'><b>checkCartFunctionality</b><br>Test class: com.saucedemo.qa.test.ProductsPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.saucedemo.qa.test.ProductsPageTest@350aac89</td></tr>
+<tr>
+<td title='com.saucedemo.qa.test.CartPageTest.checkRemoveFunctionalityFomCartPage()'><b>checkRemoveFunctionalityFomCartPage</b><br>Test class: com.saucedemo.qa.test.CartPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.saucedemo.qa.test.CartPageTest@1c5920df</td></tr>
+<tr>
+<td title='com.saucedemo.qa.test.CheckoutOverviewPageTest.checkTotalPrice()'><b>checkTotalPrice</b><br>Test class: com.saucedemo.qa.test.CheckoutOverviewPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.saucedemo.qa.test.CheckoutOverviewPageTest@17f9d882</td></tr>
+<tr>
+<td title='com.saucedemo.qa.test.CartPageTest.checkCartPageDetails()'><b>checkCartPageDetails</b><br>Test class: com.saucedemo.qa.test.CartPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.saucedemo.qa.test.CartPageTest@1c5920df</td></tr>
+<tr>
+<td title='com.saucedemo.qa.test.CheckoutOverviewPageTest.checkFinish()'><b>checkFinish</b><br>Test class: com.saucedemo.qa.test.CheckoutOverviewPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.saucedemo.qa.test.CheckoutOverviewPageTest@17f9d882</td></tr>
+<tr>
+<td title='com.saucedemo.qa.test.CheckoutInformationPageTest.checkContinueFunctionality()'><b>checkContinueFunctionality</b><br>Test class: com.saucedemo.qa.test.CheckoutInformationPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.saucedemo.qa.test.CheckoutInformationPageTest@79e4c792</td></tr>
+<tr>
+<td title='com.saucedemo.qa.test.ProductsPageTest.checkProductPageDetails()'><b>checkProductPageDetails</b><br>Test class: com.saucedemo.qa.test.ProductsPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.saucedemo.qa.test.ProductsPageTest@350aac89</td></tr>
+<tr>
+<td title='com.saucedemo.qa.test.ProductsPageTest.checkCartButtonFunctionality()'><b>checkCartButtonFunctionality</b><br>Test class: com.saucedemo.qa.test.ProductsPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.saucedemo.qa.test.ProductsPageTest@350aac89</td></tr>
+<tr>
+<td title='com.saucedemo.qa.test.CheckoutOverviewPageTest.checkPaymentAndShippingInfo()'><b>checkPaymentAndShippingInfo</b><br>Test class: com.saucedemo.qa.test.CheckoutOverviewPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.saucedemo.qa.test.CheckoutOverviewPageTest@17f9d882</td></tr>
+<tr>
+<td title='com.saucedemo.qa.test.CheckoutCompletePageTest.checkThankYouMessage()'><b>checkThankYouMessage</b><br>Test class: com.saucedemo.qa.test.CheckoutCompletePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.saucedemo.qa.test.CheckoutCompletePageTest@196a42c3</td></tr>
+<tr>
+<td title='com.saucedemo.qa.test.CartPageTest.checkContinueShopping()'><b>checkContinueShopping</b><br>Test class: com.saucedemo.qa.test.CartPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.saucedemo.qa.test.CartPageTest@1c5920df</td></tr>
+<tr>
+<td title='com.saucedemo.qa.test.ProductsPageTest.checkTotalItemCount()'><b>checkTotalItemCount</b><br>Test class: com.saucedemo.qa.test.ProductsPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.saucedemo.qa.test.ProductsPageTest@350aac89</td></tr>
+<tr>
+<td title='com.saucedemo.qa.test.CheckoutCompletePageTest.checkBackToHome()'><b>checkBackToHome</b><br>Test class: com.saucedemo.qa.test.CheckoutCompletePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.saucedemo.qa.test.CheckoutCompletePageTest@196a42c3</td></tr>
+<tr>
+<td title='com.saucedemo.qa.test.CheckoutOverviewPageTest.checkCorrectItemPresent()'><b>checkCorrectItemPresent</b><br>Test class: com.saucedemo.qa.test.CheckoutOverviewPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.saucedemo.qa.test.CheckoutOverviewPageTest@17f9d882</td></tr>
+</table><p>
+</body>
+</html>
