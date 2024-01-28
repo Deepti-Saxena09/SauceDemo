@@ -13,20 +13,21 @@ import com.saucedemo.qa.pages.CheckoutOverviewPage;
 import com.saucedemo.qa.pages.LoginPage;
 import com.saucedemo.qa.pages.ProductsPage;
 
-public class CheckoutCompletePageTest  extends TestBase{
-	
+public class CheckoutCompletePageTest extends TestBase {
+	// This includes all the test cases related to 'Checkout: Complete' page.
+
 	LoginPage loginpage;
 	ProductsPage productspage;
 	CartPage cartpage;
 	CheckoutInformationPage checkoutinformationpage;
 	CheckoutOverviewPage checkoutoverviewpage;
-	CheckoutCompletePage checkoutcompletepage; 
+	CheckoutCompletePage checkoutcompletepage;
 
 	@BeforeMethod
 	public void setUp() {
-		
+
 		Initialization();
-		
+
 		loginpage = new LoginPage();
 		productspage = new ProductsPage();
 		cartpage = new CartPage();
@@ -41,30 +42,33 @@ public class CheckoutCompletePageTest  extends TestBase{
 		checkoutinformationpage.enterData();
 		checkoutinformationpage.clickContinue();
 		checkoutcompletepage = checkoutoverviewpage.clickFinish();
-		
-			
+
 	}
-	
-	@Test(priority=1)
+
+	@Test(priority = 1)
 	public void checkPageTitle() {
+		// Validating the page title.
 		Assert.assertEquals((checkoutcompletepage.getPageTitle()), "Checkout: Complete!");
 	}
-	
-	@Test(priority=2)
+
+	@Test(priority = 2)
 	public void checkThankYouMessage() {
-		Assert.assertEquals((checkoutcompletepage.getOrderConfirmation()),"Thank you for your order!");
+		// Validating Thank You Message.
+		Assert.assertEquals((checkoutcompletepage.getOrderConfirmation()), "Thank you for your order!");
 	}
-	
-	@Test(priority=3)
+
+	@Test(priority = 3)
 	public void checkBackToHome() {
+		// Clicking on Back to Home button.
 		checkoutcompletepage.clickBackToHome();
 		Assert.assertEquals((checkoutcompletepage.getPageTitle()), "Products");
 	}
-	
+
 	@AfterMethod()
 	public void tearDown() {
-		
+		// Closing browser.
+
 		driver.quit();
 	}
-	
+
 }
